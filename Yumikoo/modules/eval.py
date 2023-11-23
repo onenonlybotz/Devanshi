@@ -170,4 +170,4 @@ async def shell(client, message):
         if os.path.isfile("shell_ouput.txt"):
             os.remove("shell_output.txt")
     else:
-        await message.reply_text(reply
+        await message.reply_text(reply)
