@@ -49,7 +49,7 @@ async def get_welcome_img(
 
 
 bg_path = "Yumikoo/Helper/resources/thumbnail.png"
-font_path = "Celestia/Helper/resources/hiroko.ttf"
+font_path = "Yumikoo/Helper/resources/font.otf"
 
 WELCOME_TEXT = """
 welcome to **{chat_title}!**\n
