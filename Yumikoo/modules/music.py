@@ -15,10 +15,9 @@ from pyrogram.errors import UserAlreadyParticipant
 from Yumikoo.Helper.requirements import get_url, get_file_name, converter, downloader, admins as a, set_admins as set
 from Yumikoo.Helper import requirements as rq
 from Yumikoo.Helper.errors import DurationLimitError
-from pytgcalls import StreamType
 from pytgcalls.types import Update
-from pytgcalls.types.input_stream import InputStream
-from pytgcalls.types.input_stream import InputAudioStream
+from pytgcalls.types import AudioPiped, AudioQuality, AudioParameters
+from Yumikoo.Helper.requirements import get_audio_stream
 
 
 DURATION_LIMIT = 30000
@@ -160,7 +159,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     font4 = ImageFont.truetype(r'Yumikoo/Helper/resources/Yumikoo.ttf', 35)
 
     image4 = ImageDraw.Draw(image2)
-    image4.text((10, 10), "DABANG MUSIC", fill="white", font = font1, align ="left") 
+    image4.text((10, 10), "Yumikoo MUSIC", fill="white", font = font1, align ="left") 
     image4.text((670, 150), "NOW PLAYING", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
 
     
