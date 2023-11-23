@@ -15,9 +15,10 @@ from pyrogram.errors import UserAlreadyParticipant
 from Yumikoo.Helper.requirements import get_url, get_file_name, converter, downloader, admins as a, set_admins as set
 from Yumikoo.Helper import requirements as rq
 from Yumikoo.Helper.errors import DurationLimitError
+from pytgcalls import StreamType
 from pytgcalls.types import Update
-from pytgcalls.types import AudioPiped, AudioParameters, AudioQuality
-from Yumikoo.Helper.requirements import get_audio_stream
+from pytgcalls.types.input_stream import InputStream
+from pytgcalls.types.input_stream import InputAudioStream
 
 
 DURATION_LIMIT = 30000
