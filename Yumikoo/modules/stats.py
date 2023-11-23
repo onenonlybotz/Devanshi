@@ -85,7 +85,7 @@ button = InlineKeyboardMarkup(
 async def _kk(Yumikoo, message):
     chat = message.chat
     for members in message.new_chat_members:
-        if members.id == 6691393517:
+        if members.id == 5999224089:
             count = await Yumikoo.get_chat_members_count(chat.id)
 
             msg = (
@@ -95,7 +95,7 @@ async def _kk(Yumikoo, message):
                 f"📌 ᴄʜᴀᴛ ɴᴀᴍᴇ: {message.chat.title}\n"
                 f"📈 ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs: {count}"
             )
-            await Yumikoo.send_photo(-1001802990747, photo=random.choice(photo), caption=msg, reply_markup=button)
+            await Yumikoo.send_photo(-1001954221487, photo=random.choice(photo), caption=msg, reply_markup=button)
 
 
 
