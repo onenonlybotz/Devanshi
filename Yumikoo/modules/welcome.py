@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram import Client, filters, idle
-from Yumiko import Yumiko
+from Yumikoo import Yumikoo
 
 
 get_font = lambda font_size, font_path: ImageFont.truetype(font_path, font_size)
@@ -48,7 +48,7 @@ async def get_welcome_img(
 
 
 
-bg_path = "Celestia/Helper/resources/welcome.png"
+bg_path = "Yumikoo/Helper/resources/thumbnail.png"
 font_path = "Celestia/Helper/resources/hiroko.ttf"
 
 WELCOME_TEXT = """
@@ -56,7 +56,7 @@ welcome to **{chat_title}!**\n
 Thanks for joining us
 """
 
-@Celestia.on_message(filters.new_chat_members, group=3)
+@Yumikoo.on_message(filters.new_chat_members, group=3)
 async def _greet(client, message):
     chat = message.chat
     my_id = client.me.id
