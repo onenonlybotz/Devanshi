@@ -89,7 +89,7 @@ PING_TEXT = """
 **ᴘɪɴɢ ᴘᴏɴɢ:** `{}`
 **ʙᴏᴛ ᴜᴘᴛɪᴍᴇ:** `{}`
 **ʟɪʙʀᴀʀʏ:** `ᴘʏʀᴏɢʀᴀᴍ`
-**ᴍʏ ᴍᴀsᴛᴇʀ: ** `𒆜𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™`
+**ᴍʏ ᴍᴀsᴛᴇʀ: ** `ᴀᴀᴅɪᴛʏᴀ`
 **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `3.10.4`
 **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ:** `{}`
 """
@@ -115,7 +115,7 @@ async def alive(_,msg:Message):
     end_time = time.time()
     ping1 = str(round((end_time - start_time) * 1000, 3)) + " ms"    
     x = await msg.reply_photo(photo=random.choice(photo), caption="**ᴀʟɪᴠɪɴɢ....**")    
-    await x.edit_caption("**๏ ˹ʜɪꝛᴏᴋᴏ ꝛᴏʙᴏᴛ˼ ɪs ᴀʟɪᴠᴇ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ɢᴏᴏᴅ ᴡɪᴛʜ ᴀ ᴘɪɴɢ ᴏғ :**  `{} ᴍs`\n**๏ ʙᴏᴛs sᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ ɪs :** `{}`".format(ping1, up), reply_markup=Button)
+    await x.edit_caption("**๏ ˹ᴅᴀʙᴀɴɢ ꝛᴏʙᴏᴛ˼ ɪs ᴀʟɪᴠᴇ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ɢᴏᴏᴅ ᴡɪᴛʜ ᴀ ᴘɪɴɢ ᴏғ :**  `{} ᴍs`\n**๏ ʙᴏᴛs sᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ ɪs :** `{}`".format(ping1, up), reply_markup=Button)
 
 
 
