@@ -47,9 +47,9 @@ HELP_TEXT = """**"""
 
 Yumikoo_buttons = [              
                 [
-                    InlineKeyboardButton("ᴀᴄᴛɪᴏɴ", callback_data="maintainer_"),   
+                    InlineKeyboardButton("ᴀᴄᴛɪᴏɴ", callback_data="action_"),   
                     InlineKeyboardButton("ᴀғᴋ", callback_data="afk_"),
-                    InlineKeyboardButton("ᴡᴇʟᴄᴏᴍᴇ", callback_data="maintainer_")
+                    InlineKeyboardButton("ᴡᴇʟᴄᴏᴍᴇ", callback_data="welcome_")
                 ],
                 [
                     InlineKeyboardButton("ɢᴀᴍᴇs", callback_data="games_"),   
